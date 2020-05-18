@@ -28,11 +28,11 @@ df['label'] = df[forecast_col].shift(-forecast_out)
 df.dropna(inplace=True)
 
 X = np.array(df.drop(['label'],1))
-X = X[:-forecat_out]
-X_lately = X[-forecast_out:]
 y = np.array(df['label'])
 X = preprocessing.scale(X)
 y = np.array(df['label'])
+
+X_lately = X[-forecast_out:]
 
 #testing data
 X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size = 0.2)
@@ -45,4 +45,6 @@ clf.fit(X_train, y_train)
 accuracy = clf.score(X_test, y_test)
 print(accuracy)
 
-
+#predict
+forecast_set  = clf.predict(X_lately);
+print(forecast_set[0], accuracy)
