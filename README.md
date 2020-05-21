@@ -12,4 +12,4 @@ pip install python-decouple
 pip install python-decouple
 ```
 
-![CLI](https://github.com/[username]/[reponame]/blob/[branch]/docs/cli.png?raw=true)
+![CLI](https://github.com/Productivity-Cube/cube-ai/blob/master/docs/cli.png?raw=true)
