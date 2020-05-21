@@ -1,4 +1,4 @@
-#Installation
+# Installation
 
 ```
 cp .env.example .env
@@ -18,7 +18,7 @@ pip install python-decouple
 pip install python-decouple
 ```
 
-#Useage
+# Usage
 
 ```
 python ./ai.py USERNAME
@@ -26,6 +26,6 @@ python ./ai.py USERNAME
 
 ![CLI](https://github.com/Productivity-Cube/cube-ai/blob/master/docs/cli.png?raw=true)
 
-##Response
+## Response
 
 `(2.426598313836403, 0.35966933359909694)` The first value is our prediction and the second is the accuracy. 
