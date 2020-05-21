@@ -18,8 +18,6 @@ USER = sys.argv[1]
 FILENAME = "storage\{}.csv".format(USER)
 URL = "{}/api/user/{}/events.csv".format(BACKEND_URL, USER)
 
-print(FILENAME)
-
 try:
     response = urlopen(URL)
 except urllib2.HTTPError, e:
