@@ -6,3 +6,5 @@ sudo apt-get install python-sklearn
 pip install quandle 
 pip install sklearn 
 pip install pandas
+pip install python-decouple
+pip install python-decouple
